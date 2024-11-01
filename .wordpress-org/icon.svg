@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <title>icon</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <rect width="108" height="108" style="fill: #b7bec0"/>
+      <g>
+        <rect x="14.28" y="34.96" width="79.44" height="51.26" style="fill: #fff"/>
+        <path d="M95.72,88.84H12.28V33H95.72Zm-79.44-4H91.72V37H16.28Z" style="fill: #313d47"/>
+        <rect x="20.28" y="40.96" width="67.44" height="39.88" style="fill: #961f21"/>
+        <g>
+          <rect x="14.28" y="23.03" width="79.44" height="11.93" style="fill: #fff"/>
+          <path d="M95.72,37H12.28V21H95.72ZM16.28,33H91.72V25H16.28Z" style="fill: #313d47"/>
+        </g>
+        <g>
+          <path d="M19,28.91h0Z" style="fill: #fff"/>
+          <rect x="18.95" y="26.91" width="3.88" height="4" style="fill: #313d47"/>
+        </g>
+        <g>
+          <path d="M25.66,28.91h0Z" style="fill: #fff"/>
+          <rect x="25.66" y="26.91" width="3.88" height="4" style="fill: #313d47"/>
+        </g>
+        <g>
+          <path d="M32.38,28.91h0Z" style="fill: #fff"/>
+          <rect x="32.38" y="26.91" width="3.88" height="4" style="fill: #313d47"/>
+        </g>
+        <polygon points="44.24 77.34 37.69 55.94 33.38 65.72 19.91 65.72 19.91 61.73 30.77 61.73 38.36 44.47 45.26 67.02 48.73 60.6 73.68 60.6 73.68 64.6 51.11 64.6 44.24 77.34" style="fill: #fff"/>
+        <polygon points="70.12 71.57 67.29 68.74 73.25 62.78 67.29 56.83 70.12 54 78.9 62.78 70.12 71.57" style="fill: #fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

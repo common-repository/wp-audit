@@ -1,0 +1,473 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  color: #424242;
+}
+
+#wpbody-content {
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 1500px) {
+  .dashboard_page_wp-audit #dashboard-widgets .postbox-container {
+    width: 33%!important;
+  }
+  .dashboard_page_wp-audit #wpbody-content #dashboard-widgets #postbox-container-1 {
+    width: 63%!important;
+  }
+}
+
+.nav-tab {
+  border: 1px solid #cccccc;
+  border-bottom: none;
+}
+.nav-tab-active {
+  background: #ffffff;
+  border-bottom:  1px solid #ffffff;
+}
+.lower {
+  text-transform: lowercase;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+th {
+  text-align: left;
+}
+
+/*/
+    Arrow Chart
+/*/
+.arrow-chart {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  border-radius: 100%;
+  overflow: hidden;
+  clip-path: circle(50% at 50% 50%);
+  float: left;
+  margin-right: 5%;
+}
+.arrow-chart.small {
+  width: 100px;
+  height: 100px;
+}
+.arrow-chart:after {
+  content: "";
+  display: block;
+  background: #ffffff;
+  width: 50%;
+  height: 50%;
+  z-index: 10;
+  position: absolute;
+  border-radius: 100%;
+  top: 25%;
+  left: 25%;
+}
+
+.arrow-chart section {
+  height: 48%;
+  width: 55%;
+  position: absolute;
+  text-align: center;
+  color: #4CAF50;
+  background-color: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+
+.arrow-chart section label {
+  font-size: .65rem;
+  font-weight: bold;
+  position: relative;
+  width: 50%;
+  padding: 0;
+  margin: 25% 0 0 0;
+  display: block;
+  color: #ffffff;
+}
+
+
+.arrow-chart section:nth-child(1) {
+  transform: rotate(0);
+  margin-left: 44%;
+  margin-top: -12%;
+}
+.arrow-chart section:nth-child(1) label {
+  transform: rotate(0);
+}
+.arrow-chart section:nth-child(2) {
+/*   display: none; */
+  transform: rotate(60deg);
+  margin-left: 66%;
+  margin-top: 26%;
+}
+.arrow-chart section:nth-child(2) label {
+  transform: rotate(-60deg);
+}
+.arrow-chart section:nth-child(3) {
+/*   display: none; */
+  transform: rotate(120deg);
+  margin-left: 44%;
+  margin-top:64%;
+}
+.arrow-chart section:nth-child(3) label {
+  transform: rotate(-120deg);
+}
+.arrow-chart section:nth-child(4) {
+/*   display:none; */
+  transform: rotate(180deg);
+  margin-left: .25%;
+  margin-top: 64%;
+}
+.arrow-chart section:nth-child(4) label {
+  transform: rotate(-180deg);
+}
+.arrow-chart section:nth-child(5) {
+/*   display:none; */
+  transform: rotate(240deg);
+  margin-left: -21.5%;
+  margin-top: 26%;
+}
+.arrow-chart section:nth-child(5) label {
+  transform: rotate(-240deg);
+}
+.arrow-chart section:nth-child(6) {
+/*   display:none; */
+  transform: rotate(300deg);
+  margin-left: 0%;
+  margin-top: -12%;
+}
+.arrow-chart section:nth-child(6) label {
+  transform: rotate(-300deg);
+}
+.muted section{
+  color: #cccccc;
+  opacity: .5;
+}
+.muted section label {
+  display: none;
+}
+
+.progressive section:nth-child(1){
+  opacity: .5;
+}
+.progressive section:nth-child(2){
+  opacity: .6;
+}
+.progressive section:nth-child(3){
+  opacity: .7;
+}
+.progressive section:nth-child(4){
+  opacity: .8;
+}
+.progressive section:nth-child(5){
+  opacity: .9;
+}
+.progressive section:nth-child(6){
+  opacity: 1;
+}
+
+figure {
+  margin: 0;
+}
+
+figure ul {
+  list-style: none;
+}
+
+figure li:before {
+  content: "\2022";
+  display: inline-block; 
+  width: 2rem;
+  margin-left: -1rem;
+  font-size: 5rem;
+  vertical-align: middle;
+}
+figure li {
+  height: 2rem;
+}
+figure li span{
+  color: #424242;
+  display: inline-block;
+}
+
+/* Color Palette from https://www.materialui.co/colors */
+.high {
+  color: #4CAF50!important;
+  opacity: 1!important;
+}
+.medium {
+  color: #FF9800!important;
+  opacity: 1!important;
+}
+.low {
+  color: #FF5722!important;
+  opacity: 1!important;
+}
+
+figure .arrow-chart {
+  margin-right: 5%;
+}
+
+figcaption {
+  font-size: 80%;
+}
+
+figcaption h3 {
+  padding: 0;
+  margin: 0;
+}
+
+figcaption p {
+  margin-top: .25rem;
+}
+
+.x-row {
+  
+}
+.x-widget-wrap {
+  min-width: 50%;
+}
+
+.disable-selection {
+    -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+ -webkit-user-select: none; /* Chrome, Safari, and Opera */
+ -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.ajax_loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+}
+
+  
+.x-container {
+  padding: 1rem 0;
+}
+
+.x-row {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.x-widget-wrap {
+  flex: 1 1 30%;
+  padding: 0 10px;
+}
+
+.dashboard_page_wp-audit .postbox,
+.x-widget {
+  background-color: #fff;
+  min-width: 400px;
+  overflow: hidden;
+  margin-bottom: 20px!important;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+}
+.x-widget.no-bg, .x-widget.no-bg .x-title-wrap {
+  background-color: transparent;
+}
+
+
+
+.x-title-wrap{
+  /*background-color: #fff;*/
+  line-height: 3rem;
+  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 0px 20px;
+}
+h2.hndle,
+.x-title {
+  font-size: 1rem!important;
+  line-height: 2rem;
+  vertical-align: middle;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.x-title-wrap i {
+  font-size: 15rem;
+  position: absolute;
+  bottom: -30px;
+  right: -15px;
+  transform: rotate(-10deg);
+  opacity: .07;
+}
+
+.x-widget-inner {
+  padding: 20px;
+  position: relative;
+  /*max-height: 500px;*/
+  min-height: 400px;
+  width: 100%;
+  overflow: auto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #444;
+}
+
+.x-widget-inner div {
+  margin-bottom: 15px;
+}
+
+.x-bottom-wrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 100%;
+}
+
+.x-wrapper {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.x-wrapper-inner {
+  /*height: 585px;*/
+  overflow: auto;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.x-widget-inner i {
+  font-size: 1.5rem;
+  float: left;
+  margin: 0 .5rem 1rem 0;
+  opacity: .8;
+  vertical-align: text-top;
+}
+
+.x-widget h4 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.x-widget p {
+}
+
+
+.dashboard_page_wp-audit .tools .main::after {
+  content: "";
+  height: 0;
+  display: block;
+  border-bottom: 1px solid #cccccc;
+  margin: 20px 0;
+}
+
+.dashboard_page_wp-audit .tools .main:last-child::after {
+  display: none;
+}
+
+.dashboard_page_wp-audit .tools ul {
+  column-count: 2;
+}
+
+.dashboard_page_wp-audit .tools li {
+  margin-bottom: 10px;
+}
+
+/* Paging */
+.slimtable-paging-div {
+	margin-top: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.slimtable-paging-seldiv {
+	display: inline;
+	float: right;
+}
+
+.slimtable-paging-select {
+	margin-right: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+
+.slimtable-paging-btnsdiv {
+	display: inline-block;
+}
+
+.slimtable-page-btn {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.slimtable-page-btn.active {
+	background-color: #ccc;
+}
+
+/* Sprites */
+
+.slimtable-sprites {
+	margin-left: 5px;
+	margin-right: 2px;
+	vertical-align: middle;
+
+	display: inline-block;
+	/*background-image: url("../img/arrows.png");*/
+	width: 17px;
+	height: 17px;
+  
+}
+
+.slimtable-sortboth {
+	background-position: -1px -1px;
+}
+
+.slimtable-sortnone {
+	background-position: -19px -19px;
+}
+
+.slimtable-sortasc {
+	background-position: -1px -19px;
+}
+
+.slimtable-sortdesc {
+	background-position: -19px -1px;
+}
